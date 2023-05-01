@@ -1,12 +1,11 @@
 import React from 'react';
 
 function Buuton(props) {
+    const classNames = [...props.classNames].join(' ');
     return (
-        <a href='#' className='btn btn-white btn-animated'>
+        <a href='htts://' className={classNames}>
             {props.text}
         </a>
-
-
     )
 }
 
