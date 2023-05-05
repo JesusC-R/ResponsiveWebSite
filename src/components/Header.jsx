@@ -28,7 +28,6 @@ function Header(props) {
                     href={'#'} 
                     text={'Discover our tours'}
                 />
-
             </div>            
         </div>
     )

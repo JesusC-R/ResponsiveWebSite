@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; //Box sizing being inherited from body
+}
+
+html {
+  //font-size: 10px;
+    font-size: 62.5%;
+  /* to get the percentage we divide the font size
+  in px by the default font size which is 16px
+  Ex: 10px / 16px = 62.5% */
+}
+
+body {
+  box-sizing: border-box
+}
