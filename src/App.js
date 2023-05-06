@@ -1,10 +1,14 @@
 import './sass/main.scss';
 import Header from './components/Header';
+import About from './components/About';
 
-function App() {
-  console.log('App');                 
+
+function App() {               
   return (
-    <Header headerClassNames={['header']} />
+    <div> 
+      <Header headerClassNames={['header']} />
+      <About />
+    </div>
   );
 }
 
