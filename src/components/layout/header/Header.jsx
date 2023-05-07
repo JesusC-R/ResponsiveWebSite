@@ -1,7 +1,11 @@
 import React from 'react';
-import Logo from './Logo';
-import LogoImg from '../assets/img/logo-white.png';
-import Button from './Button';
+
+import Logo from '../../common/Logo';
+import LogoImg from '../../../assets/img/logo-white.png';
+
+import Button from '../../common/Button';
+
+import Heading from './heading/Heading';
 
 function Header(props) {
     const headerClassNames = [...props.headerClassNames].join(' ');
@@ -18,16 +22,20 @@ function Header(props) {
 
             <div className='header__text-box'>
 
-                <h1 className='heading-primary'>
-                    <span className='heading-primary--main'>Outdoors</span>
-                    <span className='heading-primary--sub'>is where life happens</span>
-                </h1>
+                <Heading 
+                    mainText={'Outdoors'}
+                    subText={'is where life happens'}
+                    headingClasses={['heading-primary']}
+                    mainTextClasses={['heading-primary--main']}
+                    subTextClasses={['heading-primary--sub']}
+                />
 
                 <Button 
                     classNames={['btn', 'btn--white', 'btn--animated']}
                     href={'#'} 
                     text={'Discover our tours'}
                 />
+                
             </div>            
         </div>
     )

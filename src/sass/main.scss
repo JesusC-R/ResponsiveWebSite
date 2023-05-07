@@ -1,15 +1,16 @@
-@import './abstract/_functions';
-@import './abstract/_mixins';
-@import './abstract/_variables';
+@import './abstract/functions';
+@import './abstract/mixins';
+@import './abstract/variables';
 
-@import './base/_base';
-@import './base/_animations';
-@import './base/_typography';
-@import './base/_utilities';
+@import './base/base';
+@import './base/animations';
+@import './base/typography';
+@import './base/utilities';
 
 @import './components/button';
+@import './components/composition';
 
-@import './layout/_grid';
-@import './layout/_header';
+@import './layout/grid';
+@import './layout/header';
 
-@import './pages/_home';
+@import './pages/home';
