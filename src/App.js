@@ -1,13 +1,15 @@
 import './sass/main.scss';
 import Header from './components/layout/header/Header';
 import About from './components/layout/about/About';
+import Features from './components/layout/features/Features';
 
 
 function App() {               
   return (
     <div> 
-      <Header headerClassNames={['header']} />
-      <About aboutClassNames={['section-about']}/>
+      <Header headerClasses={'header'} />
+      <About aboutClasses={'section-about'}/>
+      <Features featureClasses={'section-features'}/>
     </div>
   );
 }

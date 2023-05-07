@@ -1,21 +1,22 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import AboutHeader from './AboutHeader'
 import AboutInfo from './AboutInfo';
 import AboutImages from './AboutImages';
 
 function About(props) {
-  const aboutClassNames = [...props.aboutClassNames].join(' ');
+  const aboutClasses = classNames(props.aboutClasses);
 
   return (
     <main>
 
-      <section className={aboutClassNames}>
+      <section className={aboutClasses}>
 
         <AboutHeader 
           text={'Exiting tours for adventurous people'}
-          textBoxClasses={['u-center-text u-margin-bottom-big']}
-          textClasses={['heading-secondary']}
+          textBoxClasses={'u-center-text u-margin-bottom-big'}
+          textClasses={'heading-secondary'}
         />
 
         <div className="row">
@@ -25,14 +26,14 @@ function About(props) {
             paragraph1={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione, facere dolor quod neque repellendus perferendis ullam assumenda suscipit maiores, quo nihil. Aut dicta amet quasi, enim eum labore deserunt'}
             heading2={'Live adventures like you never have before.'}
             paragraph2={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione, facere dolor quod neque repellendus perferendis ullam assumenda suscipit maiores, quo nihil. Aut dicta amet quasi, enim eum labore deserunt'}
-            gridClassNames={['col-1-of-2']}
-            headingClassNames={['heading-tertiary u-margin-bottom-small']}
-            paragraphClassNames={['paragraph']}
+            gridClasses={'col-1-of-2'}
+            headingClasses={'heading-tertiary u-margin-bottom-small'}
+            paragraphClasses={'paragraph'}
           />
 
           <AboutImages 
-            gridClassNames={['col-1-of-2']}
-            imgBoxClassNames={['composition']}
+            gridClasses={'col-1-of-2'}
+            imgBoxClasses={'composition'}
           />
 
         </div>

@@ -1,9 +1,10 @@
 import React from 'react';
+import classNames from 'classnames';
 
 function Buuton(props) {
-    const classNames = [...props.classNames].join(' ');
+    const buttonClasses = classNames(props.buttonClasses);
     return (
-        <a href='htts://' className={classNames}>
+        <a href='htts://' className={buttonClasses}>
             {props.text}
         </a>
     )

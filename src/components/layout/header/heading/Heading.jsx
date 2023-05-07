@@ -1,9 +1,10 @@
 import React from 'react';
+import classNames from 'classnames';
 
 function Heading (props) {
-    const headingClasses = [...props.headingClasses].join(' ');
-    const mainTextClasses = [...props.mainTextClasses].join(' ');
-    const subTextClasses = [...props.subTextClasses].join(' ');
+    const headingClasses = classNames(props.headingClasses);
+    const mainTextClasses = classNames(props.mainTextClasses);
+    const subTextClasses = classNames(props.subTextClasses);
 
   return (
     <h1 className={headingClasses}>

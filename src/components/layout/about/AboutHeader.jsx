@@ -1,8 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 
 function SectionHeader (props) {
-  const textBoxClasses = [...props.textBoxClasses].join(' ');
-  const textClasses = [...props.textClasses].join(' ');
+  const textBoxClasses = classNames(props.textBoxClasses);
+  const textClasses = classNames(props.textClasses);
 
   return (
     <div className={textBoxClasses}>
