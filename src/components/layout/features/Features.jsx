@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 // Components
-import FeatureCard from "./FeatureCard";
+import FeatureCard from "../../common/FeatureCard";
 
 //Icons
 import { TfiWorld } from'react-icons/tfi';

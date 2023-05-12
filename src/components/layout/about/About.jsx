@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import AboutHeader from './AboutHeader'
+import SubHeading from '../header/heading/SubHeading'
 import AboutInfo from './AboutInfo';
 import AboutImages from './AboutImages';
 
@@ -13,7 +13,7 @@ function About(props) {
 
       <section className={aboutClasses}>
 
-        <AboutHeader 
+        <SubHeading 
           text={'Exiting tours for adventurous people'}
           textBoxClasses={'u-center-text u-margin-bottom-big'}
           textClasses={'heading-secondary'}
