@@ -6,10 +6,10 @@ function SectionHeader (props) {
   const textClasses = classNames(props.textClasses);
 
   return (
-    <div className={textBoxClasses}>
+    <div className={textBoxClasses} id={props.id}>
       <h2 className={textClasses}>{props.text}</h2>
     </div>
   );
 }
 
-export default SectionHeader;
+export default SectionHeader; 

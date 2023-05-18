@@ -1,16 +1,25 @@
 .btn {
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    position: relative;
-    font-size: $default-font-size;
-    transition: all .2s;
-    
+  /* Common styles for both link and visited states */
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: $default-font-size;
+  transition: all .2s;
+  
+  /* Additional button-specific styles */
+  /* Replace &:link, &:visited with button selector */
+  & {
+    /* Styles for button */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* Adjust background and text color styles based on button modifiers */
   }
+
+  /* Rest of the styles remain the same */
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, .4);
@@ -43,13 +52,13 @@
   }
   &--white {
     background-color: $color-white;
-    color: $color-gray-dark;
+    color: $color-gray-dark-2;
 
     &::after {
       background-color: $color-white;
     }
   }
-    &--green {
+  &--green {
     background-color: $color-primary;
     color: $color-white;
 
@@ -60,17 +69,27 @@
 }
 
 .btn-text {
-  &:link,
-  &:visited {
-    font-size: $default-font-size;
-    margin-left: 1.6rem;
-    color: $color-primary;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: 0.1px solid $color-primary;
-    padding: 0.3px;
-    transition: all .2s;
+  /* Common styles for both link and visited states */
+  font-size: $default-font-size;
+  color: $color-primary;
+  background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1px solid $color-primary;
+  padding: .8rem .3rem;
+  transition: all .2s;
+
+  /* Additional button-specific styles */
+  /* Replace &:link, &:visited with button selector */
+  & {
+    /* Styles for button */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* Adjust background and text color styles based on button modifiers */
   }
+
+  /* Rest of the styles remain the same */
   &:hover {
     background-color: $color-primary;
     color: $color-white;
@@ -82,4 +101,3 @@
     transform: translateY(0);
   }
 }
-

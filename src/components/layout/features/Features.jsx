@@ -22,7 +22,7 @@ function Features (props) {
           icon={<TfiWorld className='feature-box__icon icon-basic-world' />}
           heading={'Explore The World'}
           headingClasses={'heading-tertiary u-margin-bottom-small'}
-          paragraph={'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip'}
+          paragraph={'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet'}
           paragraphClasses={'feature-box__text'}
         />
         <FeatureCard 
@@ -43,7 +43,7 @@ function Features (props) {
           icon={<SlHeart className='feature-box__icon icon-basic-world' />}
           heading={'Live a healthier life'}
           headingClasses={'heading-tertiary u-margin-bottom-small'}
-          paragraph={'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip '}
+          paragraph={'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet'}
           paragraphClasses={'feature-box__text'}
         />
       </div>

@@ -4,9 +4,9 @@ import classNames from 'classnames';
 function Buuton(props) {
     const buttonClasses = classNames(props.buttonClasses);
     return (
-        <a href='htts://' className={buttonClasses}>
+        <button href={props.href} className={buttonClasses}>
             {props.text}
-        </a>
+        </button>
     )
 }
 

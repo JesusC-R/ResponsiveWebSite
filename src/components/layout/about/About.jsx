@@ -11,7 +11,7 @@ function About(props) {
   return (
     <main>
 
-      <section className={aboutClasses}>
+      <section className={aboutClasses} id='about'>
 
         <SubHeading 
           text={'Exiting tours for adventurous people'}
