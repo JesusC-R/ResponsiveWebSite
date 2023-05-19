@@ -2,7 +2,8 @@ import React from 'react';
 // import classNames from 'classnames';
 
 import Logo from '../../common/Logo';
-import imgLogo from '../../../assets/img/logo-green-2x.png';
+import imgLogoLD from '../../../assets/img/logo-green-1x.png';
+import imgLogoHD from "../../../assets/img/logo-green-2x.png";
 
 function Footer (props) {
     return (
@@ -10,7 +11,7 @@ function Footer (props) {
             <Logo 
                 boxClassNames={'footer__logo-box'}
                 imgClassNames={'footer__logo'}
-                src={imgLogo}
+                srcSet={imgLogoLD + ' 1x, ' + imgLogoHD + ' 2x'}
                 alt={'Full Logo'}
             />
             <div className='row'>

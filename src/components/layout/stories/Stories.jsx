@@ -31,7 +31,7 @@ function Stories(props) {
         <StoryCard
           subHeading={"I had the best week ever with my family"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip"
+            "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip"
           }
           profileImg={profileImg01}
           name={"Mary Smith"}
@@ -39,7 +39,7 @@ function Stories(props) {
         <StoryCard
           subHeading={"WOW! My life is completely dofferent now"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip"
+            "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip"
           }
           profileImg={profileImg02}
           name={"Jack Wilson"}

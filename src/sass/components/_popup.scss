@@ -20,12 +20,16 @@
     display: table;
     overflow: hidden;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all .4s .2s;
+    transition: all 0.4s 0.2s;
   }
 
   &__left {
     width: 33.33333%;
     display: table-cell;
+
+    @include respond("tab-land") {
+      // block-size: 59rem;
+    }
   }
   &__right {
     width: 66.66666%;

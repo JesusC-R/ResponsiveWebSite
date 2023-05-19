@@ -6,7 +6,7 @@ function Logo(props) {
     const imgClassNames = classNames(props.imgClassNames);
     return (
         <div className={boxClassNames}>
-            <img className={imgClassNames} src={props.src} alt={props.alt} />
+            <img className={imgClassNames} srcSet={props.srcSet} src={props.src}alt={props.alt} />
         </div>
         
     );

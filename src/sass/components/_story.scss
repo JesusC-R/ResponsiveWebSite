@@ -1,15 +1,25 @@
 .story {
   width: 75%;
   margin: 10rem auto; // center content
-  box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background: rgba($color-white, .60);
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background: rgba($color-white, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skew(-12deg);
 
-  
+  @include respond("tab-port") {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+  @include respond("phone") {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 4rem;
+    transform: skew(0);
+  }
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -24,6 +34,11 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+
+    @include respond("phone") {
+      transform: skew(0);
+      right: 1.5rem;
+    }
   }
   &__img {
     height: 100%;
@@ -32,6 +47,10 @@
   }
   &__text {
     transform: skewX(12deg);
+
+    @include respond("phone") {
+      transform: skew(0);
+    }
   }
   &__caption {
     position: absolute;
@@ -49,10 +68,9 @@
   &:hover &__caption {
     opacity: 1;
     transform: translate(-50%, -50%);
-
   }
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
   }
-} 
+}
