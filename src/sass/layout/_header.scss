@@ -5,18 +5,29 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../../assets/img/hero.jpg");
+    url("../../assets/img/hero-small.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  // If the resolution is higher than 192 dpi and higher than 600px
+  // show the image with higher resolution or If the max with is 2000px or 
+  // higher show the image with higher resoltion
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url("../../assets/img/hero.jpg");
+  }
+
   @include respond("phone") {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
-
   &__logo-box {
     position: absolute;
     top: 4rem;
@@ -32,5 +43,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
   }
 }

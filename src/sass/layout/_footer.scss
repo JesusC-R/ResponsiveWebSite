@@ -18,6 +18,14 @@
   &__logo {
     width: 15rem;
     height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5rem;
+
+    @include respond("tab-port") {
+    }
   }
 
   &__navigation {

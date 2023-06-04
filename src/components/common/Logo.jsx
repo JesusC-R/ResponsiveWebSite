@@ -1,15 +1,50 @@
-import React from 'react';
-import classNames from 'classnames';
+// import React from 'react';
+// import classNames from 'classnames';
+
+// function Logo(props) {
+//     const boxClassNames = classNames(props.boxClassNames);
+//     const imgClassNames = classNames(props.imgClassNames);
+//     return (
+//       <picture className={boxClassNames}>
+//         {/* <div className={boxClassNames}>
+//           <img
+//             className={imgClassNames}
+//             srcSet={props.srcSet}
+//             src={props.src}
+//             alt={props.alt}
+//           />
+//         </div> */}
+
+//         <source className={imgClassNames} srcSet={props.srcSetSm} media='(max-width: 37.5rem)'/>
+//         <img className={imgClassNames} srcSet={props.srcSetLg} src={props.src} alt={props.alt} />
+//       </picture>
+//     );
+// }
+
+// export default Logo;
+
+import React from "react";
+import classNames from "classnames";
 
 function Logo(props) {
-    const boxClassNames = classNames(props.boxClassNames);
-    const imgClassNames = classNames(props.imgClassNames);
-    return (
-        <div className={boxClassNames}>
-            <img className={imgClassNames} srcSet={props.srcSet} src={props.src}alt={props.alt} />
-        </div>
-        
-    );
+  const boxClassNames = classNames(props.boxClassNames);
+  const imgClassNames = classNames(props.imgClassNames);
+
+  return (
+    <picture className={boxClassNames}>
+      <source
+        className={imgClassNames}
+        srcSet={props.srcSetSm}
+        media="(max-width: 37.5rem)"
+      />
+      <img
+        className={imgClassNames}
+        srcSet={props.srcSetLg}
+        src={props.src}
+        alt={props.alt}
+      />
+    </picture>
+  );
 }
 
 export default Logo;
